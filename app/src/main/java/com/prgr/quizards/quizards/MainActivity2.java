@@ -12,6 +12,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Toast;
+
 import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -93,7 +95,6 @@ protected void onCreate(Bundle savedInstanceState) {
         qtest.put("AQA", jshared.getString("amount",""));
         SCodeUtil.MaptoListMap(qtest, amap);
         jshared2.edit().putString("Q-TDA", new Gson().toJson(amap)).commit();
-        SCodeUtil.CustomToast(getApplicationContext(), "Quiz Amount: "+amap.get(0).get("AQA").toString(),0xffffffff, 15, 0xff212121,10, 3);
         //Move to new page
         Intent intent = new Intent(this, MainActivity3.class);
         startActivity(intent);

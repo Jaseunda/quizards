@@ -3,7 +3,7 @@ package com.prgr.quizards.quizards;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
+import java.lang.reflect.Type;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -38,12 +38,14 @@ public class MainActivity3 extends AppCompatActivity {
     private AppCompatButton btn;
     private AppCompatButton btn2;
     private Intent intent = new Intent();
-    private HashMap<String, Object> que = new HashMap<>();
-    private HashMap<String, Object> map = new HashMap<>();
-    private ArrayList<HashMap<String, Object>> qmap = new ArrayList<>();
     private int val;
     private SharedPreferences jshared;
     private SharedPreferences jsharedq;
+    private HashMap<String, Object> map = new HashMap<>();
+    private HashMap<String, Object> que = new HashMap<>();
+
+    private ArrayList<HashMap<String, Object>> listmap = new ArrayList<>();
+    private ArrayList<HashMap<String, Object>> qmap = new ArrayList<>();
     private int dat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,8 +115,18 @@ public class MainActivity3 extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
+//    private void parseJSON() {
+//        Gson gson = new Gson();
+//        Type type = new TypeToken<List<ContactModel>>(){}.getType();
+//        List<ContactModel> contactList = gson.fromJson(jsonString, type);
+//        for (ContactModel contact : contactList){
+//            Log.i("Contact Details", contact.id + "-" + contact.name + "-" + contact.email);
+//        }
+//    }
     private void logic(){
-        String ca = jshared.getString("amount", "");
+//        qmap.set("title", jshared.getString("", ""));
+        String ca = map.get("amount").toString();
+        listmap.get(0).get("ama").toString();
         dat = Integer.parseInt(ca);
         boolean b = val == dat;
         if(b){
