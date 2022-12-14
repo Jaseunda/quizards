@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quizards (Alpha)</string>
+    <string name="bg_desc">background photo of the app</string>
+    <string name="app_logodesc">Quizards</string>
+    <string name="button">Start</string>
+    <string name="tos">By clicking “Start” you accept the terms and conditions of this application.</string>
+    <string name="news">New Here? Click the Write icon to start making and taking quizzes!</string>
+    <string name="back">Back</string>
+    <string name="title">Enter Title</string>
+    <string name="Qn">Quiz Name</string>
+    <string name="desc">Description</string>
+    <string name="desc2">Enter Description</string>
+    <string name="quest">Question</string>
+    <string name="quest2">Enter Question</string>
+    <string name="ans">Answer</string>
+    <string name="ans2">Enter Answer</string>
+    <string name="genque"></string>
+    <string name="Count">0/10</string>
+    <string name="load">Quizard Is now randomizing your questions This won’t take a while.</string>
+    <string name="end">You Have Completed The Quiz!</string>
+    <string name="bth">Back to home</string>
+    <string name="nxt">Next</string>
+    <string name="res">Result</string>
+    <string name="time">Time:</string>
+    <string name="eqtime">00:00</string>
+    <string name="ansq">Answered Questions:</string>
+    <string name="toans">0/10</string>
+    <string name="amnt">Amount Of Questions</string>
+    <string name="entamt">Enter Amount</string>
+</resources>
